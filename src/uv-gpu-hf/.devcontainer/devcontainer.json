@@ -9,12 +9,12 @@
 
 	"containerEnv": {
 		"UV_LINK_MODE": "copy",
-		"NVIDIA_VISIBLE_DEVICES": "'${templateOption:gpu}'",
+		"NVIDIA_VISIBLE_DEVICES": "${templateOption:gpu}",
 		"HF_HOME": "/huggingface"
 	},
 
 	"runArgs": [
-        "--name", "'${templateOption:projectname}'-rbelliato-modis-'${templateOption:gpu}'", "--runtime", "nvidia"
+        "--name", "${templateOption:projectname}-rbelliato-modis-${templateOption:gpu}", "--runtime", "nvidia"
 	],
 
 	"mounts": [
