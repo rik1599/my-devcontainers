@@ -1,0 +1,23 @@
+{
+    "id": "nvidia-pytorch",
+    "version": "1.0.0",
+    "name": "Nvidia Pytorch",
+    "description": "A devcontainer from Nvidia and Pytorch (for flash-attn)",
+    "documentationURL": "https://github.com/rik1599/my-devcontainers/tree/main/src/nvidia-pytorch",
+    "licenseURL": "https://github.com/rik1599/my-devcontainers/blob/main/LICENSE",
+    "options": {
+        "projectname": {
+            "type": "string",
+            "description": "Name of the project",
+            "default": "python"
+        },
+        "gpu": {
+            "type": "string",
+            "description": "GPU Identifier number. If you need more than one GPU, insert the IDs separated by commas (es. 0,1)",
+            "default": "0"
+        }
+    },
+    "platforms": [
+        "Any"
+    ]
+}
